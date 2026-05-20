@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Totito Gamer</title>
+
+    <script src="script.js"></script>
+
+    <style>
+
+        body{
+            background: #0f172a;
+            color: white;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contenedor{
+            text-align: center;
+        }
+
+        h1{
+            color: #00ffff;
+            text-shadow: 0px 0px 15px #00ffff;
+        }
+
+        .marcador{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .tablero{
+            display: grid;
+            grid-template-columns: repeat(3,120px);
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .celda{
+            width: 120px;
+            height: 120px;
+            background: #111827;
+            border: 3px solid #00ffff;
+            box-shadow: 0px 0px 15px #00ffff;
+            font-size: 50px;
+            color: #00ffff;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: 0.3s;
+        }
+
+        .celda:hover{
+            transform: scale(1.05);
+            background: #1e293b;
+        }
+
+        button{
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            background: #00ffff;
+            color: black;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px #00ffff;
+        }
+
+        button:hover{
+            transform: scale(1.05);
+        }
+
+        #resultado{
+            margin-top: 20px;
+            font-size: 25px;
+            color: #00ffff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>🎮 TOTITO GAMER</h1>
+
+        <div class="marcador">
+
+            <div>
+                Jugador X:
+                <span id="puntosX">0</span>
+            </div>
+
+            <div>
+                Computadora O:
+                <span id="puntosO">0</span>
+            </div>
+
+        </div>
+
+        <div class="tablero">
+
+            <div class="celda" onclick="jugar(this,0)"></div>
+            <div class="celda" onclick="jugar(this,1)"></div>
+            <div class="celda" onclick="jugar(this,2)"></div>
+
+            <div class="celda" onclick="jugar(this,3)"></div>
+            <div class="celda" onclick="jugar(this,4)"></div>
+            <div class="celda" onclick="jugar(this,5)"></div>
+
+            <div class="celda" onclick="jugar(this,6)"></div>
+            <div class="celda" onclick="jugar(this,7)"></div>
+            <div class="celda" onclick="jugar(this,8)"></div>
+
+        </div>
+
+        <h2 id="resultado"></h2>
+
+        <button onclick="reiniciar()">
+            Reiniciar
+        </button>
+
+    </div>
+
+</body>
+
+</html>

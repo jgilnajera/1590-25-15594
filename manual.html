@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Manual Técnico</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Manual Técnico del Sitio Web</h1>
+
+        <hr><br>
+
+        <h2>Introducción</h2>
+
+        <p>
+            El presente proyecto consiste en la creación de un sitio web utilizando
+            HTML, CSS y JavaScript en Visual Studio Code.
+        </p>
+
+        <p>
+            El sitio fue desarrollado utilizando marcos (frames), permitiendo
+            mostrar un menú lateral y diferentes páginas dinámicas.
+        </p>
+
+        <br>
+
+        <h2>Herramientas Utilizadas</h2>
+
+        <ul>
+
+            <li>Visual Studio Code</li>
+
+            <li>HTML5</li>
+
+            <li>CSS3</li>
+
+            <li>JavaScript</li>
+
+            <li>Live Server</li>
+
+        </ul>
+
+        <br>
+
+        <h2>Funciones utilizadas en Visual Studio Code</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Función</th>
+
+                <th>Uso</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Open Folder</td>
+
+                <td>Abrir la carpeta del proyecto</td>
+
+            </tr>
+
+            <tr>
+
+                <td>New File</td>
+
+                <td>Crear archivos HTML, CSS y JS</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Live Server</td>
+
+                <td>Ejecutar el sitio web</td>
+
+            </tr>
+
+            <tr>
+
+                <td>CTRL + S</td>
+
+                <td>Guardar cambios</td>
+
+            </tr>
+
+            <tr>
+
+                <td>F5</td>
+
+                <td>Actualizar el navegador</td>
+
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <h2>Estructura del Proyecto</h2>
+
+<pre>
+
+sitio-marcos
+
+│
+├── index.html
+├── menu.html
+├── inicio.html
+├── hojaVida.html
+├── notas.html
+├── galeria.html
+├── video.html
+├── juego.html
+├── manual.html
+├── estilos.css
+├── script.js
+└── foto.jpg
+
+</pre>
+
+        <br>
+
+        <h2>Lenguajes Utilizados</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Lenguaje</th>
+
+                <th>Función</th>
+
+            </tr>
+
+            <tr>
+
+                <td>HTML</td>
+
+                <td>Estructura del sitio web</td>
+
+            </tr>
+
+            <tr>
+
+                <td>CSS</td>
+
+                <td>Diseño y estilos</td>
+
+            </tr>
+
+            <tr>
+
+                <td>JavaScript</td>
+
+                <td>Interactividad y lógica</td>
+
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <h2>Etiquetas HTML Utilizadas</h2>
+
+        <h3>DOCTYPE</h3>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+</pre>
+
+        <p>
+            Define que el documento utiliza HTML5.
+        </p>
+
+        <h3>html</h3>
+
+<pre>
+&lt;html lang="es"&gt;
+</pre>
+
+        <p>
+            Etiqueta principal del documento.
+        </p>
+
+        <h3>head</h3>
+
+<pre>
+&lt;head&gt;
+</pre>
+
+        <p>
+            Contiene configuraciones del sitio web.
+        </p>
+
+        <h3>title</h3>
+
+<pre>
+&lt;title&gt;Mi Sitio Web&lt;/title&gt;
+</pre>
+
+        <p>
+            Cambia el nombre de la pestaña del navegador.
+        </p>
+
+        <h3>body</h3>
+
+<pre>
+&lt;body&gt;
+</pre>
+
+        <p>
+            Contiene el contenido visible del sitio.
+        </p>
+
+        <br>
+
+        <h2>Uso de Marcos</h2>
+
+        <h3>frameset</h3>
+
+<pre>
+&lt;frameset cols="25%,75%"&gt;
+</pre>
+
+        <p>
+            Divide la pantalla en dos marcos:
+            uno para el menú y otro para el contenido.
+        </p>
+
+        <h3>frame</h3>
+
+<pre>
+&lt;frame src="menu.html"&gt;
+</pre>
+
+        <p>
+            Carga páginas dentro de cada marco.
+        </p>
+
+        <br>
+
+        <h2>Enlaces del Menú</h2>
+
+<pre>
+&lt;a href="notas.html" target="contenidoFrame"&gt;
+</pre>
+
+        <p>
+            Permite abrir páginas dentro del marco principal.
+        </p>
+
+        <br>
+
+        <h2>Propiedades CSS Utilizadas</h2>
+
+        <h3>background</h3>
+
+<pre>
+background: #0f172a;
+</pre>
+
+        <p>
+            Cambia el color de fondo.
+        </p>
+
+        <h3>linear-gradient</h3>
+
+<pre>
+background: linear-gradient(135deg,#020617,#1e293b);
+</pre>
+
+        <p>
+            Crea fondos degradados modernos.
+        </p>
+
+        <h3>color</h3>
+
+<pre>
+color: white;
+</pre>
+
+        <p>
+            Cambia el color del texto.
+        </p>
+
+        <h3>border</h3>
+
+<pre>
+border: 2px solid #00ffff;
+</pre>
+
+        <p>
+            Agrega bordes alrededor de elementos.
+        </p>
+
+        <h3>border-radius</h3>
+
+<pre>
+border-radius: 15px;
+</pre>
+
+        <p>
+            Redondea las esquinas.
+        </p>
+
+        <h3>box-shadow</h3>
+
+<pre>
+box-shadow: 0px 0px 20px #00ffff;
+</pre>
+
+        <p>
+            Agrega sombras y efectos glow neón.
+        </p>
+
+        <h3>padding</h3>
+
+<pre>
+padding: 20px;
+</pre>
+
+        <p>
+            Agrega espacio interno.
+        </p>
+
+        <h3>margin</h3>
+
+<pre>
+margin: 10px;
+</pre>
+
+        <p>
+            Agrega espacio externo.
+        </p>
+
+        <h3>transition</h3>
+
+<pre>
+transition: 0.3s;
+</pre>
+
+        <p>
+            Crea animaciones suaves.
+        </p>
+
+        <h3>transform</h3>
+
+<pre>
+transform: scale(1.05);
+</pre>
+
+        <p>
+            Permite agrandar elementos.
+        </p>
+
+        <h3>display: flex</h3>
+
+<pre>
+display: flex;
+</pre>
+
+        <p>
+            Organiza elementos horizontalmente.
+        </p>
+
+        <h3>flex-wrap</h3>
+
+<pre>
+flex-wrap: wrap;
+</pre>
+
+        <p>
+            Permite bajar elementos a otra línea.
+        </p>
+
+        <h3>object-fit</h3>
+
+<pre>
+object-fit: contain;
+</pre>
+
+        <p>
+            Hace que las imágenes se adapten sin recortarse.
+        </p>
+
+        <br>
+
+        <h2>Uso de iframe</h2>
+
+<pre>
+&lt;iframe src="https://www.youtube.com/embed/"&gt;
+</pre>
+
+        <p>
+            Permite mostrar videos de YouTube dentro del sitio.
+        </p>
+
+        <br>
+
+        <h2>JavaScript Utilizado</h2>
+
+        <h3>Variables</h3>
+
+<pre>
+let tablero = [];
+</pre>
+
+        <p>
+            Guardan información temporal.
+        </p>
+
+        <h3>Funciones</h3>
+
+<pre>
+function jugar(){
+}
+</pre>
+
+        <p>
+            Ejecutan acciones dentro del juego.
+        </p>
+
+        <h3>if</h3>
+
+<pre>
+if(tablero[posicion] != ""){
+</pre>
+
+        <p>
+            Verifica condiciones.
+        </p>
+
+        <h3>for</h3>
+
+<pre>
+for(let i = 0; i < 9; i++){
+}
+</pre>
+
+        <p>
+            Repite instrucciones varias veces.
+        </p>
+
+        <h3>document.getElementById</h3>
+
+<pre>
+document.getElementById("resultado")
+</pre>
+
+        <p>
+            Obtiene elementos HTML.
+        </p>
+
+        <h3>innerHTML</h3>
+
+<pre>
+innerHTML = "Ganaste";
+</pre>
+
+        <p>
+            Modifica contenido HTML dinámicamente.
+        </p>
+
+        <br>
+
+        <h2>Juego de Totito</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Función</th>
+
+                <th>Uso</th>
+
+            </tr>
+
+            <tr>
+
+                <td>jugar()</td>
+
+                <td>Permite colocar X u O</td>
+
+            </tr>
+
+            <tr>
+
+                <td>computadora()</td>
+
+                <td>Genera jugadas automáticas</td>
+
+            </tr>
+
+            <tr>
+
+                <td>verificarGanador()</td>
+
+                <td>Verifica combinaciones ganadoras</td>
+
+            </tr>
+
+            <tr>
+
+                <td>reiniciar()</td>
+
+                <td>Reinicia el juego</td>
+
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <h2>Diseño Neón Gamer</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Color</th>
+
+                <th>Uso</th>
+
+            </tr>
+
+            <tr>
+
+                <td>#0f172a</td>
+
+                <td>Fondo principal</td>
+
+            </tr>
+
+            <tr>
+
+                <td>#111827</td>
+
+                <td>Tarjetas y menús</td>
+
+            </tr>
+
+            <tr>
+
+                <td>#00ffff</td>
+
+                <td>Efectos glow neón</td>
+
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <h2>Conclusión</h2>
+
+        <p>
+            El proyecto permitió aplicar conocimientos de HTML,
+            CSS y JavaScript para crear un sitio web dinámico,
+            moderno e interactivo.
+        </p>
+
+        <p>
+            Además, se utilizó Visual Studio Code como entorno
+            de desarrollo principal, facilitando la edición y
+            prueba del proyecto mediante Live Server.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
